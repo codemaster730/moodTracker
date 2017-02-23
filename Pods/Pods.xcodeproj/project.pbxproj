@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AFB98DF85B65D1B4FE474752544A3EA /* PNLineChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31CB20D0C6262F824B96FFDF0E4B692 /* PNLineChartData.swift */; };
+		14B43ABA5B8D1010ECC1FDFE4F989286 /* PNChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18DC5019A54EF1B40B71DD732B67BCF /* PNChartConfig.swift */; };
+		17F3A374B1D31C0810C8184816615393 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524623D005DB049E79929922BEB054C0 /* DateHelper.swift */; };
+		25C02504CF618B8D35F43893B8EFD082 /* AFDateHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A4E85B6F474CE435A9E1CAAF0A9E1C /* AFDateHelper-dummy.m */; };
+		28765B10E7DCB9D8DF17F0F480743152 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FE94CBCE30CCEC7711ED0A8D48F3D9 /* CoreGraphics.framework */; };
+		4160994D1FF6AB8ABC33985AE3A8C667 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */; };
+		41637DA371D84C3DD6CE1A2BAD23DFE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0827BAE921A69715BA5D43430BF85A9F /* QuartzCore.framework */; };
+		429BCC7CFE26E47EBAB1156E433B4BF8 /* AFDateHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F94A56A282FB6AE8F0AB00CE1434C4F /* AFDateHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50CB22D8296185A860ECA5D112C4EC7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */; };
+		5567C67A9EDA2BF59307DAB53CD1FAC8 /* PNBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C192BFF87D6C5CF9EAA7FE80D95C61E /* PNBarChart.swift */; };
+		5B32EA8AB19F49234A383200A5135921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */; };
+		608A32532BEE209E9AA36A9DBFD4CE0D /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A273D9A0AB9665C98497E656E62F8AE4 /* view.swift */; };
+		647697B72EB4071903E2335A952A540D /* PNChartSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B84601E1966C58BEFF86F5D588D4C2F4 /* PNChartSwift-dummy.m */; };
+		6A18BEF9CA887FC1B710A1CC44537D4D /* PNChartSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9F516BA51FF600442E59A1B70140C9 /* PNChartSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80A66C9D928FA7939910654E391CB756 /* DateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6127745D2966707447F5045F5A7F05C9 /* DateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81AADA5ADE8535AD6F7678C6F3A06E89 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD3E5D61798E4533ABDEFBAE5FA78B1 /* MBProgressHUD.m */; };
+		918493447E6E293A6DF196C102D8F1D2 /* PNBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D18B25B89753591B2372C9A247D05E /* PNBar.swift */; };
+		A5B27BEE89F7B81ED8CEE1B95F4D8CFC /* Pods-MoodTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7C6BBB1557AD263CF01DF569DDBBA /* Pods-MoodTracker-dummy.m */; };
+		A7886D60788B9526CE60544F9A85456F /* PNChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEFC1FFD84631493BE0B701B8B030D2 /* PNChartLabel.swift */; };
+		ACBD35A8F685A12A06BD44B5CAB3ED9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */; };
+		B5C722976B6A1A3F84706EE53F07D53D /* PNChartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B00A984787B6E0318E04F86577896 /* PNChartDelegate.swift */; };
+		D12F7F849C6A29598A8738278046C6F7 /* Pods-MoodTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B19CEF4B7EADA2D54AC9254479D91796 /* Pods-MoodTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6ABDFF81E566FFECF367E42C6333D79 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08979CC5BE4A84F2E7D046F22A35AFFD /* MBProgressHUD-dummy.m */; };
+		D711EBBB664A6ED7779B62B8710FB875 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 904C1EA052BD99F5E109365303D6F31C /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0C0A91897D0D8274CD594095947C5F3 /* PNValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D48C2541D9FBC4A93F2B7887D0C52D /* PNValue.swift */; };
+		EAF4063C5D3C8C1AE3C7513759BA9D0B /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9F9CF0177C760C1FB355A0C4393807 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC42B404E1EEE10A523DA479054E50AD /* PNLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BC14CB7EF8D6904C56F16656BE1EF /* PNLineChart.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		312C6EA51900B7B21262E983E9BEFCEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FF2742C9AD186F4E8FB6EE29F8EE088;
+			remoteInfo = PNChartSwift;
+		};
+		377EE450908013D25FE1EF57DA3AC1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A587465F704F56E4247017E1755F0A11;
+			remoteInfo = AFDateHelper;
+		};
+		F8751C2DA5B5E9FED4313C2ACCC973F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBA6001481CEA0EBA031CC5C94508FAA;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0827BAE921A69715BA5D43430BF85A9F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		087FBF20DF59C45340E44CE361ACCFAC /* PNChartSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PNChartSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08979CC5BE4A84F2E7D046F22A35AFFD /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		0B92BD2776DEB2CF038DA30D66A0206D /* AFDateHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFDateHelper.xcconfig; sourceTree = "<group>"; };
+		12C5CC2D49C1065CE3761536E71C8B2C /* Pods-MoodTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MoodTracker.modulemap"; sourceTree = "<group>"; };
+		13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		17D18B25B89753591B2372C9A247D05E /* PNBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNBar.swift; path = PNChartSwift/PNBarChart/PNBar.swift; sourceTree = "<group>"; };
+		180BC14CB7EF8D6904C56F16656BE1EF /* PNLineChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNLineChart.swift; path = PNChartSwift/PNLineChart/PNLineChart.swift; sourceTree = "<group>"; };
+		1F94A56A282FB6AE8F0AB00CE1434C4F /* AFDateHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFDateHelper-umbrella.h"; sourceTree = "<group>"; };
+		236B00A984787B6E0318E04F86577896 /* PNChartDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNChartDelegate.swift; path = PNChartSwift/PNChartDelegate.swift; sourceTree = "<group>"; };
+		2DD7C6BBB1557AD263CF01DF569DDBBA /* Pods-MoodTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoodTracker-dummy.m"; sourceTree = "<group>"; };
+		2EC26E1976B0F9B01BD1CA62983D1BFA /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A195B8F583F8E9A78F1BEBAA07E1194 /* Pods-MoodTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MoodTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		524623D005DB049E79929922BEB054C0 /* DateHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateHelper.swift; path = Sources/DateHelper.swift; sourceTree = "<group>"; };
+		53D8AED45605B2B3205DEA08789C8097 /* AFDateHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFDateHelper-prefix.pch"; sourceTree = "<group>"; };
+		5489943AE8FDA38CA575D4CE30DAFA7A /* Pods_MoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6127745D2966707447F5045F5A7F05C9 /* DateHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DateHelper.h; path = Sources/DateHelper.h; sourceTree = "<group>"; };
+		61FE94CBCE30CCEC7711ED0A8D48F3D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		6F86A2FFE5349EE7977268C5E6F9222A /* AFDateHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AFDateHelper.modulemap; sourceTree = "<group>"; };
+		6F87636E866173F6B42A15A5450E1BAB /* Pods-MoodTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoodTracker-frameworks.sh"; sourceTree = "<group>"; };
+		73DD668F91D3A7609F9DFA6A9E88F117 /* Pods-MoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		7C192BFF87D6C5CF9EAA7FE80D95C61E /* PNBarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNBarChart.swift; path = PNChartSwift/PNBarChart/PNBarChart.swift; sourceTree = "<group>"; };
+		7EF870618D686ED1C6382E0EDA18AAA4 /* Pods-MoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		820C7C833B27D66CD04FDB880625DFA2 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		8666FBA5E766C31E4F5166F97BC4C6CE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		883127B4A3EAE81DC973DB36ABC484A5 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		904C1EA052BD99F5E109365303D6F31C /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0CB15E4EFAB786B35BCF57253EC168 /* PNChartSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PNChartSwift.modulemap; sourceTree = "<group>"; };
+		A1004040F0CB1B69942F82C8D01FBF08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A273D9A0AB9665C98497E656E62F8AE4 /* view.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = view.swift; path = PNChartSwift/view.swift; sourceTree = "<group>"; };
+		A31CB20D0C6262F824B96FFDF0E4B692 /* PNLineChartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNLineChartData.swift; path = PNChartSwift/PNLineChart/PNLineChartData.swift; sourceTree = "<group>"; };
+		B12508A8EF0DCCB917A62308D72AA2C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B19CEF4B7EADA2D54AC9254479D91796 /* Pods-MoodTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MoodTracker-umbrella.h"; sourceTree = "<group>"; };
+		B21EB5954152DD776CD74DE23652AA98 /* PNChartSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PNChartSwift.xcconfig; sourceTree = "<group>"; };
+		B84601E1966C58BEFF86F5D588D4C2F4 /* PNChartSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PNChartSwift-dummy.m"; sourceTree = "<group>"; };
+		CA8E94CF666B2171E56D8D48F9208E04 /* Pods-MoodTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MoodTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CC1BEAE85827A2FC11C2E84559EA3C74 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		CDD3E5D61798E4533ABDEFBAE5FA78B1 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D18DC5019A54EF1B40B71DD732B67BCF /* PNChartConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNChartConfig.swift; path = PNChartSwift/PNChartConfig.swift; sourceTree = "<group>"; };
+		DF2D090B35BB419B01867060F994358E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9F516BA51FF600442E59A1B70140C9 /* PNChartSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChartSwift-umbrella.h"; sourceTree = "<group>"; };
+		E2A4E85B6F474CE435A9E1CAAF0A9E1C /* AFDateHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFDateHelper-dummy.m"; sourceTree = "<group>"; };
+		EC5301CB3C0BB97FA711BD9008324265 /* AFDateHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFDateHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEEFC1FFD84631493BE0B701B8B030D2 /* PNChartLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNChartLabel.swift; path = PNChartSwift/PNLineChart/PNChartLabel.swift; sourceTree = "<group>"; };
+		F2D48C2541D9FBC4A93F2B7887D0C52D /* PNValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PNValue.swift; path = PNChartSwift/PNValue.swift; sourceTree = "<group>"; };
+		F2EBB1E24F2831FD233EC31D57447568 /* Pods-MoodTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MoodTracker-resources.sh"; sourceTree = "<group>"; };
+		FD9F9CF0177C760C1FB355A0C4393807 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FF9DB2D5CB27343427E7C3E5C09DA0F9 /* PNChartSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PNChartSwift-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		335E648DEC254663D842602E0EDCD19E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBD35A8F685A12A06BD44B5CAB3ED9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C4161B0612BDBF5BD49DBC28E0EC20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28765B10E7DCB9D8DF17F0F480743152 /* CoreGraphics.framework in Frameworks */,
+				5B32EA8AB19F49234A383200A5135921 /* Foundation.framework in Frameworks */,
+				41637DA371D84C3DD6CE1A2BAD23DFE2 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F5164A78A41D20EF33E587E1A2D77E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50CB22D8296185A860ECA5D112C4EC7E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBAF9C9EA757843998424FBAB7A45DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4160994D1FF6AB8ABC33985AE3A8C667 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		009A1EB295E1A970160745B48331033F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5301CB3C0BB97FA711BD9008324265 /* AFDateHelper.framework */,
+				2EC26E1976B0F9B01BD1CA62983D1BFA /* MBProgressHUD.framework */,
+				087FBF20DF59C45340E44CE361ACCFAC /* PNChartSwift.framework */,
+				5489943AE8FDA38CA575D4CE30DAFA7A /* Pods_MoodTracker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B773CB89711902D049A5E4034DCA596 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				61FE94CBCE30CCEC7711ED0A8D48F3D9 /* CoreGraphics.framework */,
+				13FA8104D69E4B6550EFF77E38670F3E /* Foundation.framework */,
+				0827BAE921A69715BA5D43430BF85A9F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B773CB89711902D049A5E4034DCA596 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28DB600E6D44E87EC7CA6A753FC9667E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B12508A8EF0DCCB917A62308D72AA2C3 /* Info.plist */,
+				9E0CB15E4EFAB786B35BCF57253EC168 /* PNChartSwift.modulemap */,
+				B21EB5954152DD776CD74DE23652AA98 /* PNChartSwift.xcconfig */,
+				B84601E1966C58BEFF86F5D588D4C2F4 /* PNChartSwift-dummy.m */,
+				FF9DB2D5CB27343427E7C3E5C09DA0F9 /* PNChartSwift-prefix.pch */,
+				DF9F516BA51FF600442E59A1B70140C9 /* PNChartSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PNChartSwift";
+			sourceTree = "<group>";
+		};
+		480196FBA4BD354AF97B65926D3F30EC /* AFDateHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6127745D2966707447F5045F5A7F05C9 /* DateHelper.h */,
+				524623D005DB049E79929922BEB054C0 /* DateHelper.swift */,
+				FBC5943F63506D9C2956CEBBB6FDC574 /* Support Files */,
+			);
+			path = AFDateHelper;
+			sourceTree = "<group>";
+		};
+		58DA0AD6063E9884738D1764D2DF4690 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FD9F9CF0177C760C1FB355A0C4393807 /* MBProgressHUD.h */,
+				CDD3E5D61798E4533ABDEFBAE5FA78B1 /* MBProgressHUD.m */,
+				A63A11370E0B75AED68E0E7622AFEFAC /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				F220CD48A5291C16D30DBBC72590ADC9 /* Pods */,
+				009A1EB295E1A970160745B48331033F /* Products */,
+				FFECD4B9CB330796F22F2470312C6651 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A63A11370E0B75AED68E0E7622AFEFAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8666FBA5E766C31E4F5166F97BC4C6CE /* Info.plist */,
+				820C7C833B27D66CD04FDB880625DFA2 /* MBProgressHUD.modulemap */,
+				883127B4A3EAE81DC973DB36ABC484A5 /* MBProgressHUD.xcconfig */,
+				08979CC5BE4A84F2E7D046F22A35AFFD /* MBProgressHUD-dummy.m */,
+				CC1BEAE85827A2FC11C2E84559EA3C74 /* MBProgressHUD-prefix.pch */,
+				904C1EA052BD99F5E109365303D6F31C /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		D066C380C560A05F987367AAF6770379 /* PNChartSwift */ = {
+			isa = PBXGroup;
+			children = (
+				17D18B25B89753591B2372C9A247D05E /* PNBar.swift */,
+				7C192BFF87D6C5CF9EAA7FE80D95C61E /* PNBarChart.swift */,
+				D18DC5019A54EF1B40B71DD732B67BCF /* PNChartConfig.swift */,
+				236B00A984787B6E0318E04F86577896 /* PNChartDelegate.swift */,
+				EEEFC1FFD84631493BE0B701B8B030D2 /* PNChartLabel.swift */,
+				180BC14CB7EF8D6904C56F16656BE1EF /* PNLineChart.swift */,
+				A31CB20D0C6262F824B96FFDF0E4B692 /* PNLineChartData.swift */,
+				F2D48C2541D9FBC4A93F2B7887D0C52D /* PNValue.swift */,
+				A273D9A0AB9665C98497E656E62F8AE4 /* view.swift */,
+				28DB600E6D44E87EC7CA6A753FC9667E /* Support Files */,
+			);
+			path = PNChartSwift;
+			sourceTree = "<group>";
+		};
+		E322792479E553806F97B3C25C628DEF /* Pods-MoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A1004040F0CB1B69942F82C8D01FBF08 /* Info.plist */,
+				12C5CC2D49C1065CE3761536E71C8B2C /* Pods-MoodTracker.modulemap */,
+				CA8E94CF666B2171E56D8D48F9208E04 /* Pods-MoodTracker-acknowledgements.markdown */,
+				4A195B8F583F8E9A78F1BEBAA07E1194 /* Pods-MoodTracker-acknowledgements.plist */,
+				2DD7C6BBB1557AD263CF01DF569DDBBA /* Pods-MoodTracker-dummy.m */,
+				6F87636E866173F6B42A15A5450E1BAB /* Pods-MoodTracker-frameworks.sh */,
+				F2EBB1E24F2831FD233EC31D57447568 /* Pods-MoodTracker-resources.sh */,
+				B19CEF4B7EADA2D54AC9254479D91796 /* Pods-MoodTracker-umbrella.h */,
+				7EF870618D686ED1C6382E0EDA18AAA4 /* Pods-MoodTracker.debug.xcconfig */,
+				73DD668F91D3A7609F9DFA6A9E88F117 /* Pods-MoodTracker.release.xcconfig */,
+			);
+			name = "Pods-MoodTracker";
+			path = "Target Support Files/Pods-MoodTracker";
+			sourceTree = "<group>";
+		};
+		F220CD48A5291C16D30DBBC72590ADC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				480196FBA4BD354AF97B65926D3F30EC /* AFDateHelper */,
+				58DA0AD6063E9884738D1764D2DF4690 /* MBProgressHUD */,
+				D066C380C560A05F987367AAF6770379 /* PNChartSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FBC5943F63506D9C2956CEBBB6FDC574 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F86A2FFE5349EE7977268C5E6F9222A /* AFDateHelper.modulemap */,
+				0B92BD2776DEB2CF038DA30D66A0206D /* AFDateHelper.xcconfig */,
+				E2A4E85B6F474CE435A9E1CAAF0A9E1C /* AFDateHelper-dummy.m */,
+				53D8AED45605B2B3205DEA08789C8097 /* AFDateHelper-prefix.pch */,
+				1F94A56A282FB6AE8F0AB00CE1434C4F /* AFDateHelper-umbrella.h */,
+				DF2D090B35BB419B01867060F994358E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFDateHelper";
+			sourceTree = "<group>";
+		};
+		FFECD4B9CB330796F22F2470312C6651 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E322792479E553806F97B3C25C628DEF /* Pods-MoodTracker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F5CDCB9D8E0BB0975E3797EDC45AB2F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D711EBBB664A6ED7779B62B8710FB875 /* MBProgressHUD-umbrella.h in Headers */,
+				EAF4063C5D3C8C1AE3C7513759BA9D0B /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28CB19F02E3C258CEAF08D9B3B6B951E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A18BEF9CA887FC1B710A1CC44537D4D /* PNChartSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4046BD433E28AC821555A09C39EBCFE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12F7F849C6A29598A8738278046C6F7 /* Pods-MoodTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF6142B47E017949CEF37B2CE12F0071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429BCC7CFE26E47EBAB1156E433B4BF8 /* AFDateHelper-umbrella.h in Headers */,
+				80A66C9D928FA7939910654E391CB756 /* DateHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6FF2742C9AD186F4E8FB6EE29F8EE088 /* PNChartSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D5BCBDD9C72BE2E283C58EEBED00CA /* Build configuration list for PBXNativeTarget "PNChartSwift" */;
+			buildPhases = (
+				A0FD3922440E0B614CF435BC63C1462A /* Sources */,
+				75F5164A78A41D20EF33E587E1A2D77E /* Frameworks */,
+				28CB19F02E3C258CEAF08D9B3B6B951E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PNChartSwift;
+			productName = PNChartSwift;
+			productReference = 087FBF20DF59C45340E44CE361ACCFAC /* PNChartSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A587465F704F56E4247017E1755F0A11 /* AFDateHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9B3CF6E140F5495AEDA9AB7BC73CB05 /* Build configuration list for PBXNativeTarget "AFDateHelper" */;
+			buildPhases = (
+				98A61E88519838BAC98D16301E4D206D /* Sources */,
+				BBAF9C9EA757843998424FBAB7A45DE4 /* Frameworks */,
+				EF6142B47E017949CEF37B2CE12F0071 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFDateHelper;
+			productName = AFDateHelper;
+			productReference = EC5301CB3C0BB97FA711BD9008324265 /* AFDateHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF03B9A7AD09B97B9F31F391E87A412A /* Pods-MoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF917C800C652137F194EE89D4A235F7 /* Build configuration list for PBXNativeTarget "Pods-MoodTracker" */;
+			buildPhases = (
+				01B74AB3EB9A08103898B94D596A42A9 /* Sources */,
+				335E648DEC254663D842602E0EDCD19E /* Frameworks */,
+				4046BD433E28AC821555A09C39EBCFE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6D0164B46BD6FDD7917F018EFBF322 /* PBXTargetDependency */,
+				850BDA3BE1FC38D41B3C8155E98E9FC2 /* PBXTargetDependency */,
+				D46236776EB62385D5934C7C9645D9B0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MoodTracker";
+			productName = "Pods-MoodTracker";
+			productReference = 5489943AE8FDA38CA575D4CE30DAFA7A /* Pods_MoodTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E2C012DEECFAAEF8B8A9CE1E8AAA03C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				18E2532E62644868123A50D7CA3BA192 /* Sources */,
+				4C4161B0612BDBF5BD49DBC28E0EC20B /* Frameworks */,
+				1F5CDCB9D8E0BB0975E3797EDC45AB2F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 2EC26E1976B0F9B01BD1CA62983D1BFA /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 009A1EB295E1A970160745B48331033F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A587465F704F56E4247017E1755F0A11 /* AFDateHelper */,
+				DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */,
+				6FF2742C9AD186F4E8FB6EE29F8EE088 /* PNChartSwift */,
+				BF03B9A7AD09B97B9F31F391E87A412A /* Pods-MoodTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B74AB3EB9A08103898B94D596A42A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B27BEE89F7B81ED8CEE1B95F4D8CFC /* Pods-MoodTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E2532E62644868123A50D7CA3BA192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6ABDFF81E566FFECF367E42C6333D79 /* MBProgressHUD-dummy.m in Sources */,
+				81AADA5ADE8535AD6F7678C6F3A06E89 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A61E88519838BAC98D16301E4D206D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C02504CF618B8D35F43893B8EFD082 /* AFDateHelper-dummy.m in Sources */,
+				17F3A374B1D31C0810C8184816615393 /* DateHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FD3922440E0B614CF435BC63C1462A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				918493447E6E293A6DF196C102D8F1D2 /* PNBar.swift in Sources */,
+				5567C67A9EDA2BF59307DAB53CD1FAC8 /* PNBarChart.swift in Sources */,
+				14B43ABA5B8D1010ECC1FDFE4F989286 /* PNChartConfig.swift in Sources */,
+				B5C722976B6A1A3F84706EE53F07D53D /* PNChartDelegate.swift in Sources */,
+				A7886D60788B9526CE60544F9A85456F /* PNChartLabel.swift in Sources */,
+				647697B72EB4071903E2335A952A540D /* PNChartSwift-dummy.m in Sources */,
+				EC42B404E1EEE10A523DA479054E50AD /* PNLineChart.swift in Sources */,
+				0AFB98DF85B65D1B4FE474752544A3EA /* PNLineChartData.swift in Sources */,
+				E0C0A91897D0D8274CD594095947C5F3 /* PNValue.swift in Sources */,
+				608A32532BEE209E9AA36A9DBFD4CE0D /* view.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6D0164B46BD6FDD7917F018EFBF322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFDateHelper;
+			target = A587465F704F56E4247017E1755F0A11 /* AFDateHelper */;
+			targetProxy = 377EE450908013D25FE1EF57DA3AC1A5 /* PBXContainerItemProxy */;
+		};
+		850BDA3BE1FC38D41B3C8155E98E9FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = DBA6001481CEA0EBA031CC5C94508FAA /* MBProgressHUD */;
+			targetProxy = F8751C2DA5B5E9FED4313C2ACCC973F8 /* PBXContainerItemProxy */;
+		};
+		D46236776EB62385D5934C7C9645D9B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PNChartSwift;
+			target = 6FF2742C9AD186F4E8FB6EE29F8EE088 /* PNChartSwift */;
+			targetProxy = 312C6EA51900B7B21262E983E9BEFCEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		35BC520334002D7298DC87B7400B7BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883127B4A3EAE81DC973DB36ABC484A5 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		534E7E7A121812183A35EB8047CBC1CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EF870618D686ED1C6382E0EDA18AAA4 /* Pods-MoodTracker.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MoodTracker/Pods-MoodTracker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56DB07182F3BBC763189F2A1DEFC62D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883127B4A3EAE81DC973DB36ABC484A5 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EF3B29DA1065A375020C6E59C119872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DD668F91D3A7609F9DFA6A9E88F117 /* Pods-MoodTracker.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MoodTracker/Pods-MoodTracker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		86A19BCDA3E90EDA278D454447392299 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B92BD2776DEB2CF038DA30D66A0206D /* AFDateHelper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFDateHelper/AFDateHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFDateHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFDateHelper/AFDateHelper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AFDateHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A96139220C0517E26FBAFC1C7AA34503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B92BD2776DEB2CF038DA30D66A0206D /* AFDateHelper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFDateHelper/AFDateHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFDateHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFDateHelper/AFDateHelper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AFDateHelper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B2B6843AB00859477DD8A6000EA0883D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21EB5954152DD776CD74DE23652AA98 /* PNChartSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNChartSwift/PNChartSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChartSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChartSwift/PNChartSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PNChartSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D76CBF77E7D6537660F759D7A87BFAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21EB5954152DD776CD74DE23652AA98 /* PNChartSwift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PNChartSwift/PNChartSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PNChartSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PNChartSwift/PNChartSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PNChartSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07D5BCBDD9C72BE2E283C58EEBED00CA /* Build configuration list for PBXNativeTarget "PNChartSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B6843AB00859477DD8A6000EA0883D /* Debug */,
+				D76CBF77E7D6537660F759D7A87BFAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E2C012DEECFAAEF8B8A9CE1E8AAA03C /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56DB07182F3BBC763189F2A1DEFC62D6 /* Debug */,
+				35BC520334002D7298DC87B7400B7BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF917C800C652137F194EE89D4A235F7 /* Build configuration list for PBXNativeTarget "Pods-MoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				534E7E7A121812183A35EB8047CBC1CF /* Debug */,
+				5EF3B29DA1065A375020C6E59C119872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9B3CF6E140F5495AEDA9AB7BC73CB05 /* Build configuration list for PBXNativeTarget "AFDateHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A96139220C0517E26FBAFC1C7AA34503 /* Debug */,
+				86A19BCDA3E90EDA278D454447392299 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

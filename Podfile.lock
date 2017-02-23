@@ -1,0 +1,27 @@
+PODS:
+  - AFDateHelper (3.5.3)
+  - MBProgressHUD (1.0.0)
+  - PNChartSwift (0.0.2)
+
+DEPENDENCIES:
+  - AFDateHelper
+  - MBProgressHUD
+  - PNChartSwift (from `https://github.com/kevinzhow/PNChart-Swift.git`)
+
+EXTERNAL SOURCES:
+  PNChartSwift:
+    :git: https://github.com/kevinzhow/PNChart-Swift.git
+
+CHECKOUT OPTIONS:
+  PNChartSwift:
+    :commit: 88eb8bcb4cd415d02775b2d355542b8bd338712d
+    :git: https://github.com/kevinzhow/PNChart-Swift.git
+
+SPEC CHECKSUMS:
+  AFDateHelper: e64bcc4a88a07e1d3e62442741b2a164adc02d77
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  PNChartSwift: bcdfbffd65920072463eff42d0dfb46189bf4495
+
+PODFILE CHECKSUM: 1130516a022390895e353f664e4b349ecb899a1d
+
+COCOAPODS: 1.1.0.rc.2
